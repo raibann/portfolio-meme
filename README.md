@@ -1,8 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Meme
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js that showcases your work in a fun and engaging way. This project combines the power of Next.js with beautiful animations and a responsive design to create a unique portfolio experience.
 
-First, run the development server:
+## 🚀 Features
+
+- Modern UI with smooth animations using GSAP and React Scroll Parallax
+- Responsive design that works on all devices
+- Dark/Light theme support
+- Interactive components using Radix UI
+- Optimized performance with Next.js and Turbopack
+- TypeScript for better development experience
+- Tailwind CSS for styling
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15.1.8
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** Radix UI
+- **Animations:** GSAP, React Scroll Parallax
+- **Theme:** next-themes
+- **Icons:** Lucide React, Tech Stack Icons
+
+## 📦 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/portfolio-meme.git
+cd portfolio-meme
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+## 🚀 Development
+
+Run the development server with Turbopack for faster builds:
 
 ```bash
 npm run dev
@@ -10,27 +51,70 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+# or
+yarn start
+# or
+pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧪 Linting
 
-## Deploy on Vercel
+Run the linter to check for code quality:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+# or
+yarn lint
+# or
+pnpm lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Project Structure
+
+```
+portfolio-meme/
+├── app/              # Next.js app directory
+├── components/       # Reusable React components
+├── lib/             # Utility functions and configurations
+├── public/          # Static assets
+└── ...config files
+```
+
+## 🎨 Customization
+
+- Modify the theme in `app/globals.css`
+- Update components in the `components/` directory
+- Add new pages in the `app/` directory
+- Customize animations in the respective component files
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio-meme/issues).
+
+## 📞 Support
+
+If you have any questions or need help, please open an issue in the GitHub repository.

@@ -53,28 +53,40 @@ const Navbar = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="flex justify-around items-center"
+        className="flex justify-between items-center"
       >
         <motion.div
           variants={itemVariants}
-          className="flex justify-center items-center"
+          className="flex justify-center items-center min-w-16 min-h-16"
         >
           <Link href="/">
-            <ShinyText
-              text="RB"
-              className="scroll-m-20 text-2xl font-semibold tracking-tight text-center"
-            />
+            <p className="text-2xl font-semibold tracking-tight text-center text-foreground">
+              RB
+            </p>
           </Link>
         </motion.div>
-        <motion.div variants={itemVariants} className="">
-          <div className="flex gap-7 rounded-b-2xl p-4 bg-black">
+        <motion.div variants={itemVariants}>
+          <div className="flex rounded-b-2xl max-sm:rounded-full p-4 max-sm:py-0 max-sm:px-4 bg-black">
             {nav.map((item) => (
               <Link key={item.name} href={item.path} className="relative">
-                <Button className={'text-sm min-w-28'} variant={'ghost'}>
-                  <ShinyText text={item.name} />
+                <Button
+                  className={
+                    'text-sm text-muted dark:text-foreground min-w-28 max-sm:min-w-auto group hover:text-primary transition-colors'
+                  }
+                  variant={'ghost'}
+                >
+                  {item.icon && <item.icon className="min-md:hidden" />}
+                  <span className="max-sm:hidden group-hover:text-primary transition-colors">
+                    {item.name}
+                  </span>
                 </Button>
                 {isActive(item.path) && (
-                  <div className="absolute bottom-0 right-0 left-0 translate-x-1/2 w-1/2 rounded-2xl h-0.5 bg-primary/50" />
+                  <motion.div
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ duration: 0.3, ease: 'easeOut' }}
+                    className="absolute bottom-0 right-0 left-0 translate-x-1/2 w-1/2 rounded-2xl h-0.5 bg-muted dark:bg-foreground origin-left"
+                  />
                 )}
               </Link>
             ))}
@@ -82,7 +94,7 @@ const Navbar = () => {
         </motion.div>
         <motion.div
           variants={itemVariants}
-          className="h-full flex justify-center items-center"
+          className="h-full flex justify-center items-center min-w-16 min-h-16"
         >
           <DropdownMenu>
             <DropdownMenuTrigger className="cursor-pointer">

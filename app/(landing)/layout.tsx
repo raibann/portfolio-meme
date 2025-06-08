@@ -6,8 +6,10 @@ import Navbar from '@/components/navbar'
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ClientOnly>
-      <Navbar />
-      {children}
+      <div className="container mx-auto">
+        <Navbar />
+        {children}
+      </div>
     </ClientOnly>
   )
 }
