@@ -11,7 +11,6 @@ import {
 import { Github, Gitlab } from 'lucide-react'
 import Link from 'next/link'
 import DATA_LINKS from '@/lib/data-links'
-import ShinyText from './text/shiny-text/shiny-text'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 
