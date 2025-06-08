@@ -24,7 +24,9 @@ const Footer = () => {
         <Button
           variant="ghost"
           size="icon"
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          onClick={() =>
+            setTheme(theme === 'dark' || theme === 'system' ? 'light' : 'dark')
+          }
           className="w-9 h-9"
         >
           <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
