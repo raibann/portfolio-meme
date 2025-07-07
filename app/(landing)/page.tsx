@@ -8,12 +8,9 @@ import { Separator } from '@/components/ui/separator'
 
 export default function HomePage() {
   return (
-    <main className="bg-gradient-to-t px-4">
+    <main className="px-4">
       <Home />
       <Tech />
-      {/* <Separator />
-      <Project />
-      <Separator /> */}
       <Experience />
       <Separator />
       <Footer />

@@ -11,7 +11,7 @@ const Home = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
     const { className, ...rest } = props
     return (
       <div
-        className={cn('rounded-b-2xl h-[calc(100shv-4rem)]', className)}
+        className={cn('rounded-b-2xl h-[calc(100dvh-4rem)]', className)}
         ref={ref}
         {...rest}
       >
@@ -52,12 +52,9 @@ const Home = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
             className="flex justify-center items-center relative py-8 lg:py-24"
           >
             <ProfileCard
-              name="Raibann"
-              title="Full Stack Developer"
-              handle="raibann"
               status="Available"
               contactText="Contact Me"
-              avatarUrl="/images/208FBD93-5F93-4BF7-A532-3FCB2AEEE80B.png"
+              avatarUrl="/images/photo_2025-06-25.jpeg"
               showUserInfo={true}
               enableTilt={true}
               contactLink={DATA_LINKS.telegram}
