@@ -1,120 +1,91 @@
-# Portfolio Meme
+# Magic Portfolio
 
-A modern, interactive portfolio website built with Next.js that showcases your work in a fun and engaging way. This project combines the power of Next.js with beautiful animations and a responsive design to create a unique portfolio experience.
+Magic Portfolio is a simple, clean, beginner-friendly portfolio template. It supports an MDX-based content system for projects and blog posts, an about / CV page and a gallery.
 
-## 🚀 Features
+View the demo [here](https://demo.magic-portfolio.com).
 
-- Modern UI with smooth animations using GSAP and React Scroll Parallax
-- Responsive design that works on all devices
-- Dark/Light theme support
-- Interactive components using Radix UI
-- Optimized performance with Next.js and Turbopack
-- TypeScript for better development experience
-- Tailwind CSS for styling
+![Magic Portfolio](public/images/og/home.jpg)
 
-## 🛠️ Tech Stack
+## Getting started
 
-- **Framework:** Next.js 15.1.8
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **UI Components:** Radix UI
-- **Animations:** GSAP, React Scroll Parallax
-- **Theme:** next-themes
-- **Icons:** Lucide React, Tech Stack Icons
-
-## 📦 Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/portfolio-meme.git
-cd portfolio-meme
+**1. Clone the repository**
+```
+git clone https://github.com/once-ui-system/magic-portfolio.git
 ```
 
-2. Install dependencies:
-
-```bash
+**2. Install dependencies**
+```
 npm install
-# or
-yarn install
-# or
-pnpm install
 ```
 
-## 🚀 Development
-
-Run the development server with Turbopack for faster builds:
-
-```bash
+**3. Run dev server**
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 🏗️ Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-# or
-yarn build
-# or
-pnpm build
+**4. Edit config**
+```
+src/resources/once-ui.config.js
 ```
 
-To start the production server:
-
-```bash
-npm run start
-# or
-yarn start
-# or
-pnpm start
+**5. Edit content**
+```
+src/resources/content.js
 ```
 
-## 🧪 Linting
-
-Run the linter to check for code quality:
-
-```bash
-npm run lint
-# or
-yarn lint
-# or
-pnpm lint
+**6. Create blog posts / projects**
+```
+Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 ```
 
-## 📝 Project Structure
+Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
-```
-portfolio-meme/
-├── app/              # Next.js app directory
-├── components/       # Reusable React components
-├── lib/             # Utility functions and configurations
-├── public/          # Static assets
-└── ...config files
-```
+## Documentation
 
-## 🎨 Customization
+Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
 
-- Modify the theme in `app/globals.css`
-- Update components in the `components/` directory
-- Add new pages in the `app/` directory
-- Customize animations in the respective component files
+## Features
 
-## 📄 License
+### Once UI
+- All tokens, components & features of [Once UI](https://once-ui.com)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### SEO
+- Automatic open-graph and X image generation with next/og
+- Automatic schema and metadata generation based on the content file
 
-## 🤝 Contributing
+### Design
+- Responsive layout optimized for all screen sizes
+- Timeless design without heavy animations and motion
+- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio-meme/issues).
+### Content
+- Render sections conditionally based on the content file
+- Enable or disable pages for blog, work, gallery and about / CV
+- Generate and display social links automatically
+- Set up password protection for URLs
 
-## 📞 Support
+### Localization
+- A localized, earlier version of Magic Portfolio is available with the next-intl library
+- To use localization, switch to the 'i18n' branch
 
-If you have any questions or need help, please open an issue in the GitHub repository.
+## Creators
+
+Lorant One: [Threads](https://www.threads.net/@lorant.one) / [LinkedIn](https://www.linkedin.com/in/lorant-one/)
+
+## Get involved
+
+- Join the Design Engineers Club on [Discord](https://discord.com/invite/5EyAQ4eNdS) and share your project with us!
+- Deployed your docs? Share it on the [Once UI Hub](https://once-ui.com/hub) too! We feature our favorite apps on our landing page.
+
+## License
+
+Distributed under the CC BY-NC 4.0 License.
+- Attribution is required.
+- Commercial usage is not allowed.
+- You can extend the license to [Dopler CC](https://dopler.app/license) by purchasing a [Once UI Pro](https://once-ui.com/pricing) license.
+
+See `LICENSE.txt` for more information.
+
+## Deploy with Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
